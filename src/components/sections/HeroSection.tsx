@@ -35,10 +35,14 @@ export function HeroSection({
       {/* Background layers */}
       <div className="absolute inset-0 bg-[#0a0a0f]" />
 
-      {/* Background image */}
+      {/* Background image - using bottom-right quadrant of composite */}
       <div
-        className="absolute inset-0 bg-cover bg-center opacity-30"
-        style={{ backgroundImage: "url('/images/backgrounds/hero-bg.png')" }}
+        className="absolute inset-0 opacity-25"
+        style={{
+          backgroundImage: "url('/images/backgrounds/hero-bg.png')",
+          backgroundSize: "200%",
+          backgroundPosition: "100% 100%",
+        }}
       />
       <div className="absolute inset-0 bg-gradient-to-b from-[#0a0a0f]/60 via-transparent to-[#0a0a0f]" />
 
