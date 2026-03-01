@@ -10,9 +10,7 @@ interface MobileMenuProps {
 }
 
 export function MobileMenu({ open, onClose }: MobileMenuProps) {
-  const allLinks = navigation.main.flatMap((item) =>
-    item.children ? item.children : [item]
-  );
+  const allLinks = navigation.main;
 
   return (
     <AnimatePresence>

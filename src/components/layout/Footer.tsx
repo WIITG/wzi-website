@@ -10,10 +10,10 @@ const footerLinks = {
     { label: "WZI Comply", href: "/platform/#comply" },
   ],
   Solutions: [
-    { label: "Vehicle Mitigation", href: "/vehicle-mitigation/" },
-    { label: "Planning & Design", href: "/planning-design/" },
     { label: "Consultancy", href: "/consultancy/" },
     { label: "Industries", href: "/industries/" },
+    { label: "Permit Vault", href: "/platform/#comply" },
+    { label: "AI Compliance", href: "/platform/#risk" },
   ],
   Enterprise: [
     { label: "Security", href: "/security/" },

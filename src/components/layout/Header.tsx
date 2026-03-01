@@ -8,7 +8,6 @@ import { MobileMenu } from "./MobileMenu";
 export function Header() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
-  const [solutionsOpen, setSolutionsOpen] = useState(false);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20);
@@ -47,49 +46,15 @@ export function Header() {
 
             {/* Desktop Navigation */}
             <nav className="hidden lg:flex items-center gap-1">
-              {navigation.main.map((item) =>
-                item.children ? (
-                  <div
-                    key={item.label}
-                    className="relative"
-                    onMouseEnter={() => setSolutionsOpen(true)}
-                    onMouseLeave={() => setSolutionsOpen(false)}
-                  >
-                    <button className="px-4 py-2 text-sm text-white/70 hover:text-white transition-colors flex items-center gap-1">
-                      {item.label}
-                      <svg
-                        className={`w-3 h-3 transition-transform ${solutionsOpen ? "rotate-180" : ""}`}
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                      >
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                      </svg>
-                    </button>
-                    {solutionsOpen && (
-                      <div className="absolute top-full left-0 mt-1 w-56 py-2 bg-black/90 backdrop-blur-xl border border-white/[0.08] rounded-xl shadow-2xl">
-                        {item.children.map((child) => (
-                          <Link
-                            key={child.href}
-                            href={child.href}
-                            className="block px-4 py-2.5 text-sm text-white/70 hover:text-white hover:bg-white/[0.05] transition-colors"
-                          >
-                            {child.label}
-                          </Link>
-                        ))}
-                      </div>
-                    )}
-                  </div>
-                ) : (
-                  <Link
-                    key={item.href}
-                    href={item.href}
-                    className="px-4 py-2 text-sm text-white/70 hover:text-white transition-colors"
-                  >
-                    {item.label}
-                  </Link>
-                )
-              )}
+              {navigation.main.map((item) => (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  className="px-4 py-2 text-sm text-white/70 hover:text-white transition-colors"
+                >
+                  {item.label}
+                </Link>
+              ))}
             </nav>
 
             {/* CTA + Mobile Toggle */}

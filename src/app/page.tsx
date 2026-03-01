@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { HeroSection } from "@/components/sections/HeroSection";
 import { TrustBar } from "@/components/sections/TrustBar";
 import { CTASection } from "@/components/sections/CTASection";
@@ -110,6 +111,56 @@ export default function HomePage() {
                 <ModuleCard moduleKey={key} className="h-full" />
               </ScrollReveal>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Product Screenshots */}
+      <section className="py-24 border-t border-white/[0.04]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <ScrollReveal>
+            <SectionHeading
+              badge="Product"
+              title="Built for the Field"
+              subtitle="Purpose-designed interfaces for infrastructure teams, compliance officers, and executive leadership."
+            />
+          </ScrollReveal>
+          <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-6">
+            <ScrollReveal>
+              <div className="rounded-xl overflow-hidden border border-white/[0.08]">
+                <Image
+                  src="/images/module-comply-ops.png"
+                  alt="WZI Comply operations room dashboard"
+                  width={800}
+                  height={500}
+                  className="w-full h-auto"
+                />
+              </div>
+            </ScrollReveal>
+            <ScrollReveal delay={0.1}>
+              <div className="rounded-xl overflow-hidden border border-white/[0.08]">
+                <Image
+                  src="/images/module-risk-heatmap.png"
+                  alt="WZI Risk heatmap and executive dashboard"
+                  width={800}
+                  height={500}
+                  className="w-full h-auto"
+                />
+              </div>
+            </ScrollReveal>
+          </div>
+          <div className="mt-6">
+            <ScrollReveal delay={0.15}>
+              <div className="rounded-xl overflow-hidden border border-white/[0.08]">
+                <Image
+                  src="/images/module-pulse-long.png"
+                  alt="WZI Pulse wellbeing intelligence dashboard"
+                  width={1200}
+                  height={400}
+                  className="w-full h-auto"
+                />
+              </div>
+            </ScrollReveal>
           </div>
         </div>
       </section>

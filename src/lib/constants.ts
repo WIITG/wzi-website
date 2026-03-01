@@ -108,15 +108,7 @@ export const navigation = {
   main: [
     { label: "Home", href: "/" },
     { label: "Platform", href: "/platform/" },
-    {
-      label: "Solutions",
-      href: "#",
-      children: [
-        { label: "Vehicle Mitigation", href: "/vehicle-mitigation/" },
-        { label: "Planning & Design", href: "/planning-design/" },
-        { label: "Consultancy", href: "/consultancy/" },
-      ],
-    },
+    { label: "Consultancy", href: "/consultancy/" },
     { label: "Industries", href: "/industries/" },
     { label: "Security", href: "/security/" },
     { label: "Case Studies", href: "/case-studies/" },
