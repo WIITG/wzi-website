@@ -9,7 +9,7 @@ import { ScrollReveal } from "@/components/ui/ScrollReveal";
 export const metadata: Metadata = {
   title: "About Us",
   description:
-    "WIITG — WorkZone Intelligence Technology Group. The company behind WZI, delivering AI-powered infrastructure governance for high-risk operations.",
+    "WIITG — Wright Intelligent Infrastructure Technologies Group. The company behind WZI, delivering AI-powered infrastructure governance for high-risk operations.",
 };
 
 const values = [
@@ -40,7 +40,7 @@ const timeline = [
     year: "Foundation",
     title: "WIITG Established",
     description:
-      "WorkZone Intelligence Technology Group founded to address the critical gap in infrastructure governance technology.",
+      "Wright Intelligent Infrastructure Technologies Group founded to address the critical gap in infrastructure governance technology.",
   },
   {
     year: "Development",
@@ -67,8 +67,8 @@ export default function AboutPage() {
     <>
       <HeroSection
         badge="About Us"
-        title="WorkZone Intelligence"
-        titleAccent="Technology Group"
+        title="Wright Intelligent Infrastructure"
+        titleAccent="Technologies Group"
         subtitle="The company behind WZI. We build purpose-designed governance technology for organisations operating in high-risk, regulated infrastructure environments."
         primaryCta={{ label: "Request Briefing", href: "/enterprise-briefing/" }}
         height="large"
@@ -108,7 +108,7 @@ export default function AboutPage() {
                   </div>
                 </div>
                 <h3 className="text-xl font-semibold mb-2">
-                  WorkZone Intelligence Technology Group
+                  Wright Intelligent Infrastructure Technologies Group
                 </h3>
                 <p className="text-xs uppercase tracking-wider text-amber-400/60 font-medium mb-4">
                   The Company

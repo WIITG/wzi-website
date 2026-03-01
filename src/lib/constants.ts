@@ -1,6 +1,8 @@
 export const siteConfig = {
   name: "WorkZone Intelligence",
   shortName: "WZI",
+  companyName: "Wright Intelligent Infrastructure Technologies Group",
+  companyShort: "WIITG",
   tagline: "AI Infrastructure Governance",
   description:
     "Unified workforce, fleet, and compliance intelligence for high-risk infrastructure operations.",

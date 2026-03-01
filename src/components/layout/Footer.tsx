@@ -85,8 +85,8 @@ export function Footer() {
         {/* Bottom bar */}
         <div className="mt-16 pt-8 border-t border-white/[0.04] flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-xs text-white/30">
-            &copy; {new Date().getFullYear()} WorkZone Intelligence Technology
-            Group. All rights reserved.
+            &copy; {new Date().getFullYear()} Wright Intelligent Infrastructure
+            Technologies Group. All rights reserved.
           </p>
           <div className="flex items-center gap-6">
             <Link href="#" className="text-xs text-white/30 hover:text-white/50">
