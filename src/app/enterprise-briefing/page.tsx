@@ -157,6 +157,41 @@ export default function EnterpriseBriefingPage() {
                     </div>
                     <div>
                       <label className="block text-xs text-white/40 mb-1.5">
+                        Current System / Product
+                      </label>
+                      <input
+                        type="text"
+                        className="w-full px-4 py-3 rounded-lg bg-white/[0.03] border border-white/[0.08] text-white text-sm placeholder:text-white/20 focus:outline-none focus:border-amber-500/50 transition-colors"
+                        placeholder="e.g. Spreadsheets, Procore, Asite, bespoke system..."
+                      />
+                      <p className="text-[11px] text-white/25 mt-1">
+                        What do you currently use to manage governance, compliance, or workforce operations?
+                      </p>
+                    </div>
+                    <div>
+                      <label className="block text-xs text-white/40 mb-1.5">
+                        Engagement Type
+                      </label>
+                      <select className="w-full px-4 py-3 rounded-lg bg-white/[0.03] border border-white/[0.08] text-white text-sm focus:outline-none focus:border-amber-500/50 transition-colors">
+                        <option value="" className="bg-[#0a0a0f]">
+                          Select engagement type
+                        </option>
+                        <option value="integration" className="bg-[#0a0a0f]">
+                          Integration Package
+                        </option>
+                        <option value="full-system" className="bg-[#0a0a0f]">
+                          Full Systems Change
+                        </option>
+                        <option value="unsure" className="bg-[#0a0a0f]">
+                          Not sure yet — advise me
+                        </option>
+                      </select>
+                      <p className="text-[11px] text-white/25 mt-1">
+                        Integration keeps your current systems while adding real-time governance intelligence. Full systems change replaces legacy tools entirely.
+                      </p>
+                    </div>
+                    <div>
+                      <label className="block text-xs text-white/40 mb-1.5">
                         Message
                       </label>
                       <textarea
@@ -173,7 +208,7 @@ export default function EnterpriseBriefingPage() {
               </GlassCard>
             </ScrollReveal>
 
-            {/* What to expect */}
+            {/* What to expect + Integration explainer */}
             <div>
               <ScrollReveal>
                 <h3 className="text-lg font-semibold mb-6">
@@ -202,9 +237,21 @@ export default function EnterpriseBriefingPage() {
                 ))}
               </div>
 
+              {/* Integration Package Explainer */}
+              <ScrollReveal delay={0.35}>
+                <div className="mt-8 p-5 rounded-xl border border-amber-500/10 bg-amber-500/[0.03]">
+                  <h4 className="text-sm font-semibold text-amber-400/80 mb-2">
+                    Integration Package
+                  </h4>
+                  <p className="text-xs text-white/40 leading-relaxed">
+                    Not ready to replace your current systems? The WZI Integration Package connects alongside your existing tools, allowing your organisation to operate in real-time governance language without disrupting current workflows. Your teams keep working in the systems they know while WZI adds the compliance intelligence layer on top.
+                  </p>
+                </div>
+              </ScrollReveal>
+
               {/* Trust signals */}
               <ScrollReveal delay={0.4}>
-                <div className="mt-8 p-4 rounded-xl border border-white/[0.06] bg-white/[0.02]">
+                <div className="mt-4 p-4 rounded-xl border border-white/[0.06] bg-white/[0.02]">
                   <p className="text-xs text-white/40 mb-3">
                     Your data is protected under our ISO 27001 compliant ISMS
                   </p>
