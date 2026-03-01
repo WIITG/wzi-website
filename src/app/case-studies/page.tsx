@@ -102,6 +102,7 @@ export default function CaseStudiesPage() {
         subtitle="Performance metrics from a live high-speed motorway upgrade programme. Every number is drawn from operational data, not projections. All seven WZI modules deployed across the full project lifecycle."
         primaryCta={{ label: "Discuss Your Deployment", href: "/enterprise-briefing/" }}
         height="large"
+        backgroundImage="/images/backgrounds/hero-bg-1.png"
       />
 
       {/* Overview Stats */}

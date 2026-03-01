@@ -1,7 +1,15 @@
 import Link from "next/link";
+import Image from "next/image";
 import { siteConfig, certifications } from "@/lib/constants";
 
 const footerLinks = {
+  Company: [
+    { label: "About Us", href: "/about/" },
+    { label: "Our Brands", href: "/about/#brands" },
+    { label: "Industries", href: "/industries/" },
+    { label: "Case Studies", href: "/case-studies/" },
+    { label: "Consultancy", href: "/consultancy/" },
+  ],
   Platform: [
     { label: "Overview", href: "/platform/" },
     { label: "WZI Recruit", href: "/platform/#recruit" },
@@ -9,15 +17,8 @@ const footerLinks = {
     { label: "WZI Fleet", href: "/platform/#fleet" },
     { label: "WZI Comply", href: "/platform/#comply" },
   ],
-  Solutions: [
-    { label: "Consultancy", href: "/consultancy/" },
-    { label: "Industries", href: "/industries/" },
-    { label: "Permit Vault", href: "/platform/#comply" },
-    { label: "AI Compliance", href: "/platform/#risk" },
-  ],
   Enterprise: [
     { label: "Security", href: "/security/" },
-    { label: "Case Studies", href: "/case-studies/" },
     { label: "Procurement", href: "/procurement/" },
     { label: "Request Briefing", href: "/enterprise-briefing/" },
   ],
@@ -31,30 +32,18 @@ export function Footer() {
           {/* Brand */}
           <div className="col-span-2 md:col-span-1">
             <div className="flex items-center gap-3 mb-4">
-              <svg width="32" height="32" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" className="flex-shrink-0">
-                <defs>
-                  <linearGradient id="footer-logo-grad" x1="0" y1="0" x2="40" y2="40">
-                    <stop offset="0%" stopColor="#f59e0b" />
-                    <stop offset="100%" stopColor="#a855f7" />
-                  </linearGradient>
-                </defs>
-                <circle cx="20" cy="20" r="5" fill="url(#footer-logo-grad)" />
-                <circle cx="8" cy="10" r="3.5" fill="url(#footer-logo-grad)" opacity="0.85" />
-                <line x1="11" y1="12" x2="16" y2="17" stroke="url(#footer-logo-grad)" strokeWidth="1.5" opacity="0.6" />
-                <circle cx="32" cy="10" r="3.5" fill="url(#footer-logo-grad)" opacity="0.85" />
-                <line x1="29" y1="12" x2="24" y2="17" stroke="url(#footer-logo-grad)" strokeWidth="1.5" opacity="0.6" />
-                <circle cx="8" cy="30" r="3.5" fill="url(#footer-logo-grad)" opacity="0.85" />
-                <line x1="11" y1="28" x2="16" y2="23" stroke="url(#footer-logo-grad)" strokeWidth="1.5" opacity="0.6" />
-                <circle cx="32" cy="30" r="3.5" fill="url(#footer-logo-grad)" opacity="0.85" />
-                <line x1="29" y1="28" x2="24" y2="23" stroke="url(#footer-logo-grad)" strokeWidth="1.5" opacity="0.6" />
-                <circle cx="4" cy="20" r="2.5" fill="url(#footer-logo-grad)" opacity="0.7" />
-                <line x1="6.5" y1="20" x2="15" y2="20" stroke="url(#footer-logo-grad)" strokeWidth="1.5" opacity="0.5" />
-                <circle cx="36" cy="20" r="2.5" fill="url(#footer-logo-grad)" opacity="0.7" />
-                <line x1="33.5" y1="20" x2="25" y2="20" stroke="url(#footer-logo-grad)" strokeWidth="1.5" opacity="0.5" />
-              </svg>
-              <span className="text-white font-semibold">
-                {siteConfig.shortName}
-              </span>
+              <Image
+                src="/images/logos/wzi-icon.png"
+                alt="WZI"
+                width={28}
+                height={38}
+                className="flex-shrink-0"
+              />
+              <div className="flex items-center gap-1.5">
+                <span className="text-white font-semibold">WIITG</span>
+                <span className="text-white/20">|</span>
+                <span className="text-white font-semibold gradient-text-amber">WZI</span>
+              </div>
             </div>
             <p className="text-sm text-white/40 leading-relaxed mb-6">
               {siteConfig.description}

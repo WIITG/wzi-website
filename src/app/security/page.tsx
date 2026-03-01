@@ -79,6 +79,7 @@ export default function SecurityPage() {
         subtitle="93 controls across 4 domains. ISO 27001 aligned. Built for organisations where data protection is a regulatory obligation, not a feature checkbox."
         primaryCta={{ label: "Request Security Overview", href: "/enterprise-briefing/" }}
         height="large"
+        backgroundImage="/images/backgrounds/hero-bg-2.png"
       />
 
       {/* ISO 27001 Domains */}

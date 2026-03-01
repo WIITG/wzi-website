@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { navigation, siteConfig } from "@/lib/constants";
 import { MobileMenu } from "./MobileMenu";
 
@@ -31,41 +32,32 @@ export function Header() {
           <div className="flex items-center justify-between h-16 sm:h-20">
             {/* Logo */}
             <Link href="/" className="flex items-center gap-3 group">
-              {/* WZI Connected Nodes Logo */}
-              <svg width="32" height="32" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" className="flex-shrink-0">
-                <defs>
-                  <linearGradient id="logo-grad" x1="0" y1="0" x2="40" y2="40">
-                    <stop offset="0%" stopColor="#f59e0b" />
-                    <stop offset="100%" stopColor="#a855f7" />
-                  </linearGradient>
-                </defs>
-                {/* Central node */}
-                <circle cx="20" cy="20" r="5" fill="url(#logo-grad)" />
-                {/* Top-left node */}
-                <circle cx="8" cy="10" r="3.5" fill="url(#logo-grad)" opacity="0.85" />
-                <line x1="11" y1="12" x2="16" y2="17" stroke="url(#logo-grad)" strokeWidth="1.5" opacity="0.6" />
-                {/* Top-right node */}
-                <circle cx="32" cy="10" r="3.5" fill="url(#logo-grad)" opacity="0.85" />
-                <line x1="29" y1="12" x2="24" y2="17" stroke="url(#logo-grad)" strokeWidth="1.5" opacity="0.6" />
-                {/* Bottom-left node */}
-                <circle cx="8" cy="30" r="3.5" fill="url(#logo-grad)" opacity="0.85" />
-                <line x1="11" y1="28" x2="16" y2="23" stroke="url(#logo-grad)" strokeWidth="1.5" opacity="0.6" />
-                {/* Bottom-right node */}
-                <circle cx="32" cy="30" r="3.5" fill="url(#logo-grad)" opacity="0.85" />
-                <line x1="29" y1="28" x2="24" y2="23" stroke="url(#logo-grad)" strokeWidth="1.5" opacity="0.6" />
-                {/* Side nodes */}
-                <circle cx="4" cy="20" r="2.5" fill="url(#logo-grad)" opacity="0.7" />
-                <line x1="6.5" y1="20" x2="15" y2="20" stroke="url(#logo-grad)" strokeWidth="1.5" opacity="0.5" />
-                <circle cx="36" cy="20" r="2.5" fill="url(#logo-grad)" opacity="0.7" />
-                <line x1="33.5" y1="20" x2="25" y2="20" stroke="url(#logo-grad)" strokeWidth="1.5" opacity="0.5" />
-              </svg>
-              <div>
-                <span className="text-white font-bold text-lg tracking-tight">
-                  {siteConfig.shortName}
-                </span>
-                <span className="hidden sm:inline text-white/40 text-sm ml-2 font-normal">
-                  Intelligence
-                </span>
+              {/* WZI Logo Icon */}
+              <Image
+                src="/images/logos/wzi-icon.png"
+                alt="WZI"
+                width={32}
+                height={44}
+                className="flex-shrink-0"
+              />
+              <div className="flex items-center gap-2">
+                <div>
+                  <span className="text-white font-bold text-lg tracking-tight">
+                    WIITG
+                  </span>
+                  <span className="hidden sm:block text-[10px] uppercase tracking-[0.15em] text-white/30 leading-none -mt-0.5">
+                    Group
+                  </span>
+                </div>
+                <span className="text-white/20 text-lg font-light">|</span>
+                <div>
+                  <span className="text-white font-bold text-lg tracking-tight gradient-text-amber">
+                    WZI
+                  </span>
+                  <span className="hidden sm:block text-[10px] uppercase tracking-[0.15em] text-white/30 leading-none -mt-0.5">
+                    Intelligence
+                  </span>
+                </div>
               </div>
             </Link>
 

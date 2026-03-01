@@ -107,12 +107,13 @@ export type ModuleKey = keyof typeof modules;
 export const navigation = {
   main: [
     { label: "Home", href: "/" },
+    { label: "About Us", href: "/about/" },
     { label: "Platform", href: "/platform/" },
-    { label: "Consultancy", href: "/consultancy/" },
     { label: "Industries", href: "/industries/" },
-    { label: "Security", href: "/security/" },
     { label: "Case Studies", href: "/case-studies/" },
+    { label: "Consultancy", href: "/consultancy/" },
     { label: "Procurement", href: "/procurement/" },
+    { label: "Security", href: "/security/" },
   ],
   cta: { label: "Request Briefing", href: "/enterprise-briefing/" },
 };

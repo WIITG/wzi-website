@@ -101,6 +101,7 @@ export default function PlatformPage() {
           href: "/enterprise-briefing/",
         }}
         height="large"
+        backgroundImage="/images/backgrounds/hero-bg-2.png"
       />
 
       {/* Core Modules */}

@@ -37,6 +37,7 @@ export default function EnterpriseBriefingPage() {
         titleAccent="Briefing"
         subtitle="Speak directly with our governance team. We will assess your operational requirements and demonstrate how WZI addresses your specific compliance challenges."
         height="medium"
+        backgroundImage="/images/backgrounds/hero-bg-4.png"
       />
 
       <section className="py-24">

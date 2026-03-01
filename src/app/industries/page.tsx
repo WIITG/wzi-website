@@ -85,6 +85,7 @@ export default function IndustriesPage() {
         subtitle="WZI operates where failure is not administrative inconvenience but operational, legal, and reputational risk. Every module is engineered for regulated environments."
         primaryCta={{ label: "Find Your Sector", href: "/enterprise-briefing/" }}
         height="large"
+        backgroundImage="/images/backgrounds/hero-bg-1.png"
       />
 
       {/* Industry Cards */}

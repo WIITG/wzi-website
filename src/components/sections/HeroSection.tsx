@@ -11,6 +11,7 @@ interface HeroSectionProps {
   primaryCta?: { label: string; href: string };
   secondaryCta?: { label: string; href: string };
   height?: "full" | "large" | "medium";
+  backgroundImage?: string;
 }
 
 export function HeroSection({
@@ -21,6 +22,7 @@ export function HeroSection({
   primaryCta,
   secondaryCta,
   height = "full",
+  backgroundImage = "/images/backgrounds/hero-bg-4.png",
 }: HeroSectionProps) {
   const heights = {
     full: "min-h-screen",
@@ -35,13 +37,13 @@ export function HeroSection({
       {/* Background layers */}
       <div className="absolute inset-0 bg-[#0a0a0f]" />
 
-      {/* Background image - using bottom-right quadrant of composite */}
+      {/* Background image */}
       <div
         className="absolute inset-0 opacity-25"
         style={{
-          backgroundImage: "url('/images/backgrounds/hero-bg.png')",
-          backgroundSize: "200%",
-          backgroundPosition: "100% 100%",
+          backgroundImage: `url('${backgroundImage}')`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
         }}
       />
       <div className="absolute inset-0 bg-gradient-to-b from-[#0a0a0f]/60 via-transparent to-[#0a0a0f]" />

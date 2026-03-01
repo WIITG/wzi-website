@@ -73,6 +73,7 @@ export default function ConsultancyPage() {
         subtitle="Expert governance advisory for infrastructure organisations. From compliance audits to full implementation support, our team bridges the gap between regulatory requirements and operational reality."
         primaryCta={{ label: "Speak With Our Team", href: "/enterprise-briefing/" }}
         height="large"
+        backgroundImage="/images/backgrounds/hero-bg-3.png"
       />
 
       {/* Services */}

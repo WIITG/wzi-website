@@ -56,6 +56,7 @@ export default function ProcurementPage() {
         subtitle="Multiple procurement routes designed for public and private sector infrastructure organisations. Modular licensing that scales with your governance requirements."
         primaryCta={{ label: "Start Procurement Conversation", href: "/enterprise-briefing/" }}
         height="large"
+        backgroundImage="/images/backgrounds/hero-bg-3.png"
       />
 
       {/* Frameworks */}
