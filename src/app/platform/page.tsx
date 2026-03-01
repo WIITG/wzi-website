@@ -22,7 +22,7 @@ const moduleScreenshots: Partial<Record<ModuleKey, string>> = {
   talent: "/images/module-talent.png",
   fleet: "/images/module-fleet.png",
   comply: "/images/module-comply.png",
-  pulse: "/images/module-pulse.png",
+  pulse: "/images/module-pulse-long.png",
   fatigue: "/images/module-fatigue.png",
   risk: "/images/module-risk.png",
 };

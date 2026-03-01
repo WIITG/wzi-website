@@ -141,10 +141,16 @@ export const industries = [
     icon: "highway",
   },
   {
-    name: "Rail",
+    name: "Civil Construction",
     description:
-      "Network Rail compliance, RISQS alignment, and rail infrastructure workforce governance.",
-    icon: "rail",
+      "Major infrastructure project governance, CDM 2015 compliance, and construction workforce competency management.",
+    icon: "construction",
+  },
+  {
+    name: "Traffic Management",
+    description:
+      "Traffic management plan governance, TMA compliance, operative deployment controls, and workzone safety oversight.",
+    icon: "traffic",
   },
   {
     name: "Utilities",
@@ -153,15 +159,21 @@ export const industries = [
     icon: "utilities",
   },
   {
+    name: "Engineering",
+    description:
+      "Engineering workforce competency assurance, design governance, and technical compliance oversight for infrastructure programmes.",
+    icon: "engineering",
+  },
+  {
+    name: "WHS",
+    description:
+      "Work Health and Safety governance, psychosocial risk management, incident reporting, and safety compliance across operations.",
+    icon: "whs",
+  },
+  {
     name: "Government",
     description:
       "Crown Commercial framework alignment, G-Cloud procurement, and public sector governance.",
     icon: "government",
-  },
-  {
-    name: "Aviation",
-    description:
-      "Airside operations compliance, CAA standards alignment, and aviation workforce governance.",
-    icon: "aviation",
   },
 ];
