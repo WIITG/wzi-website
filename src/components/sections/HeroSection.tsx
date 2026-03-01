@@ -35,6 +35,13 @@ export function HeroSection({
       {/* Background layers */}
       <div className="absolute inset-0 bg-[#0a0a0f]" />
 
+      {/* Background image */}
+      <div
+        className="absolute inset-0 bg-cover bg-center opacity-30"
+        style={{ backgroundImage: "url('/images/backgrounds/hero-bg.png')" }}
+      />
+      <div className="absolute inset-0 bg-gradient-to-b from-[#0a0a0f]/60 via-transparent to-[#0a0a0f]" />
+
       {/* Nebula gradient orbs */}
       <div className="absolute top-1/4 -left-32 w-96 h-96 bg-amber-500/[0.07] rounded-full blur-[120px]" />
       <div className="absolute bottom-1/4 -right-32 w-96 h-96 bg-purple-600/[0.07] rounded-full blur-[120px]" />
